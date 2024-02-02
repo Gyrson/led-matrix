@@ -11,8 +11,8 @@ sudo apt install build-essential
 sudo apt-get install python3-dev python3-pillow -y
 sudo apt-get install make
 
-curl -L $GITUSER/$REPO/archive/$COMMIT.zip -o $REPO-$COMMIT.zip
-unzip -q $REPO-$COMMIT.zip
+curl -L https://github.com/hzeller/rpi-rgb-led-matrix/archive/a3eea997a9254b83ab2de97ae80d83588f696387.zip -o rpi-rgb-led-matrix-a3eea997a9254b83ab2de97ae80d83588f696387.zip
+unzip -q rpi-rgb-led-matrix-a3eea997a9254b83ab2de97ae80d83588f696387.zip
 
 Edit lib/Makefile (uncomment the Adafruit hat component)
 make build-python PYTHON=$(command -v python3)
