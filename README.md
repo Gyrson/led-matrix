@@ -10,6 +10,10 @@ sudo apt-get update
 sudo apt install build-essential
 sudo apt-get install python3-dev python3-pillow -y
 sudo apt-get install make
+
+curl -L $GITUSER/$REPO/archive/$COMMIT.zip -o $REPO-$COMMIT.zip
+unzip -q $REPO-$COMMIT.zip
+
 Edit lib/Makefile (uncomment the Adafruit hat component)
 make build-python PYTHON=$(command -v python3)
 sudo make install-python PYTHON=$(command -v python3)
