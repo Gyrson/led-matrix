@@ -13,6 +13,8 @@ sudo apt-get install make
 
 curl -L https://github.com/hzeller/rpi-rgb-led-matrix/archive/a3eea997a9254b83ab2de97ae80d83588f696387.zip -o rpi-rgb-led-matrix-a3eea997a9254b83ab2de97ae80d83588f696387.zip
 unzip -q rpi-rgb-led-matrix-a3eea997a9254b83ab2de97ae80d83588f696387.zip
+rm rpi-rgb-led-matrix-a3eea997a9254b83ab2de97ae80d83588f696387.zip
+mv rpi-rgb-led-matrix-a3eea997a9254b83ab2de97ae80d83588f696387 rpi-rgb-led-matrix
 
 Edit lib/Makefile (uncomment the Adafruit hat component)
 make build-python PYTHON=$(command -v python3)
