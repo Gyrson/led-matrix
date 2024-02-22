@@ -10,6 +10,8 @@ Code and CAD Files for Matrix Dashboard
 - sudo apt-get install python3-dev python3-pillow -y
 - sudo apt-get install make
 - apt-get install dbus
+- apt-get install python3-pip
+- apt-get install python3-feedparser
 
 - systemctl enable dbus
 - systemctl start dbus
